@@ -1,0 +1,61 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>WeatherApp</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+        #results div.list-group label.list-group-item{
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 5px;
+        }
+        #results div.list-group label.list-group-item:hover{
+            cursor: pointer;
+        }
+    </style>
+    <body>
+        <main>
+            <div class="px-4 py-5 my-5">
+                <div class="col-lg-4 my-3 mx-auto">
+                    <div class="list-group list-group-checkable d-grid gap-2 border-0 w-auto">
+                        <label>Please input city</label>
+                        <input type="text" class="form-control" id="autocomplete" placeholder="Search city...">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mx-auto">
+                    <div id="results">
+                        <div class="list-group d-grid">
+                            <label class="list-group-item rounded-3 py-3 mb-3">
+                              No Data Found
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+              <div class="my-5">
+                <div class="col-lg-4 mx-auto">
+                    <div class="list-group list-group-checkable d-grid gap-2 border-0 w-auto">
+                        <p class="list-group-item rounded-3 py-3">
+                            <span class="d-block weather">Weather: <label id="weather"></label></span>
+                            <span class="d-block wind">Wind: <label id="wind"></label></span>
+                            <span class="d-block humidity">Humidity: <label id="humidity"></label> </span>
+                        </p>
+                    </div>
+                </div>
+                
+              </div>
+        </main>
+        
+    
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+    </body>
+</html>
